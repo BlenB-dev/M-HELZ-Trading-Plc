@@ -6,8 +6,14 @@ export default defineConfig({
   build: {
     outDir: "dist",
   },
+  base: "./", // Ensure this is set to serve assets correctly
   server: {
-    host: true, // This allows Vite to run properly on Render
+    host: true,
     port: 3000,
+  },
+  resolve: {
+    alias: {
+      "@": "/src",
+    },
   },
 });
