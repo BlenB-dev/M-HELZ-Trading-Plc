@@ -11,76 +11,78 @@ import Footer from "./Footer"; // Import Footer component
 
 const Aboutus = () => (
   <>
-    <div className="flex items-center mb-12 ml-10 animate-fade-in">
+    {/* About Us Header with Icon */}
+    <div className="flex items-center justify-center mb-12 animate-fade-in">
       <FaRegBuilding className="text-5xl text-yellow-500 mr-4 animate-pulse" />
-      <h2 className={`${styles.heading2} ml-2`}>About Us</h2>
+      <h2 className={`${styles.heading2}`}>About Us</h2>
     </div>
+
+    {/* About Us Section */}
     <section
-      className={`${layout.section} relative overflow-hidden text-white py-20`}
+      className={`${layout.section} relative overflow-hidden text-white py-10 px-4 sm:px-8 lg:px-16`}
     >
       {/* Decorative Background */}
-      <div className="absolute inset-0 opacity-10  bg-cover"></div>
+      <div className="absolute inset-0 opacity-10 bg-[url('/assets/abstract-pattern.png')] bg-cover"></div>
 
-      {/* About Us Header with Icon */}
-
-      {/* About Us Content */}
-      <div className={`${styles.sectionInfo} relative z-10`}>
-        <p
-          className={`${styles.paragraph} ml-[180px] mt-[-50px] max-w-[700px]  mb-10`}
-        >
-          Established in 2024, <strong>M HELZ Trading Plc</strong> is a leading
-          pharmaceutical importing company based in Ethiopia. We specialize in
-          sourcing high-quality pharmaceutical products to meet the growing
-          healthcare needs of our nation. Our commitment to excellence and
-          compliance with international standards ensures that we provide safe
-          and effective medications.
-        </p>
+      <div className="relative z-10 max-w-7xl mx-auto">
+        {/* About Us Content */}
+        <div className="text-center md:text-left">
+          <p className={`${styles.paragraph} mt-5 md:mt-0 mx-auto max-w-2xl`}>
+            Established in 2024, <strong>M HELZ Trading Plc</strong> is a
+            leading pharmaceutical importing company based in Ethiopia. We
+            specialize in sourcing high-quality pharmaceutical products to meet
+            the growing healthcare needs of our nation. Our commitment to
+            excellence and compliance with international standards ensures that
+            we provide safe and effective medications.
+          </p>
+        </div>
 
         {/* Animated Values List */}
-        <div className="grid grid-cols-1 ml-[230px] md:grid-cols-2 gap-8 mb-12">
-          <div className="flex items-center w-[600px] gap-4 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          <div className="flex items-start gap-4 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
             <FaGlobeAfrica className="text-4xl text-blue-500" />
             <div>
-              <h4 className="text-xl font-semibold text-white">
+              <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
                 Importation of Pharmaceuticals
               </h4>
-              <p className="text-gray-300">
-                Sourcing a wide range of medications, (including generics and
-                branded products), Medical Equipments, Devices, Instruments and
-                Supplies.
+              <p className="text-gray-600 dark:text-gray-300">
+                Sourcing a wide range of medications, including generics,
+                branded products, medical equipment, devices, and supplies.
               </p>
             </div>
           </div>
-          <div className="flex items-center w-[600px] gap-4 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          <div className="flex items-start gap-4 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
             <FaCheckCircle className="text-4xl text-green-500" />
             <div>
-              <h4 className="text-xl font-semibold text-white">
+              <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
                 Regulatory Compliance
               </h4>
-              <p className="text-gray-300">
+              <p className="text-gray-600 dark:text-gray-300">
                 Navigating the complexities of Ethiopian pharmaceutical
                 regulations to ensure smooth import processes.
               </p>
             </div>
           </div>
-          <div className="flex items-center w-[600px] gap-4 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          <div className="flex items-start gap-4 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
             <FaHandHoldingHeart className="text-4xl text-red-500" />
             <div>
-              <h4 className="text-xl font-semibold text-white">
+              <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
                 Market Insights
               </h4>
-              <p className="text-gray-300">
+              <p className="text-gray-600 dark:text-gray-300">
                 Providing valuable market intelligence to our partners for
-                informed decision-making..
+                informed decision-making.
               </p>
             </div>
           </div>
         </div>
 
         {/* Call-to-Action Button */}
-        <Button styles="mt-6 bg-blue-600 hover:bg-blue-700 text-white flex items-center shadow-lg hover:shadow-xl">
-          Contact Us
-        </Button>
+        <div className="flex justify-center mt-10">
+          <Button styles="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg shadow-lg hover:shadow-xl">
+            Contact Us
+          </Button>
+        </div>
       </div>
 
       {/* Decorative Divider */}
