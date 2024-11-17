@@ -112,7 +112,9 @@ const Footer = () => {
                 </p>
                 <p>
                   <div className="mt-10 absolute">
-                    <FaInstagram />
+                    <a href="https://www.linkedin.com/in/blen-bete-765246212/">
+                      <FaInstagram />
+                    </a>
                   </div>
                   <p className="mt-[38px] absolute ml-[26px]">Dr. Edil</p>{" "}
                 </p>
