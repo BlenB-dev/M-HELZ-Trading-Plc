@@ -25,7 +25,7 @@ const Mission = () => (
     <section
       className={`${layout.section} relative overflow-hidden  text-white py-20`}
     >
-      <div className="absolute inset-0 opacity-20 bg-[url('/assets/abstract-pattern.png')] bg-cover"></div>
+      <div className="absolute inset-0 opacity-20  bg-cover"></div>
 
       <div className="flex items-center mb-12 ml-10 animate-fade-in">
         <FaHeartbeat className="text-5xl text-red-500 mr-4 animate-pulse" />

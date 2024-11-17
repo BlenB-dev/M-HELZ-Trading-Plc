@@ -19,7 +19,7 @@ const Aboutus = () => (
       className={`${layout.section} relative overflow-hidden text-white py-20`}
     >
       {/* Decorative Background */}
-      <div className="absolute inset-0 opacity-10 bg-[url('/assets/abstract-pattern.png')] bg-cover"></div>
+      <div className="absolute inset-0 opacity-10  bg-cover"></div>
 
       {/* About Us Header with Icon */}
 
