@@ -5,6 +5,12 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: "dist",
+    assetsDir: "assets", // Ensure assets are stored in the 'assets' directory
   },
-  base: "./", // Ensure this is set to serve assets correctly
+  base: "./", // Ensures relative paths are used for all assets
+  resolve: {
+    alias: {
+      "@": "/src",
+    },
+  },
 });
