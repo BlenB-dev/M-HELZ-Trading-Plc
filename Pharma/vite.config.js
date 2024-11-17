@@ -7,13 +7,4 @@ export default defineConfig({
     outDir: "dist",
   },
   base: "./", // Ensure this is set to serve assets correctly
-  server: {
-    host: true,
-    port: 3000,
-  },
-  resolve: {
-    alias: {
-      "@": "/src",
-    },
-  },
 });
