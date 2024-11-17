@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div
-    className={`flex flex-col md:flex-row items-center p-6  md:ml-[-360px] rounded-[20px] ${
+    className={`flex flex-col md:flex-row items-center p-6   rounded-[20px] ${
       index !== features.length - 1 ? "mb-6" : "mb-0"
     } feature-card`}
   >
