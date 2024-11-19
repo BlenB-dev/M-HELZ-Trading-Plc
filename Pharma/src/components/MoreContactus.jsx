@@ -7,7 +7,6 @@ const MoreContactus = () => {
     <div
       className="min-h-screen flex flex-col justify-between px-5 bg-cover bg-center"
       style={{
-        backgroundImage: "url('/path-to-your-background-image.jpg')",
         backgroundColor: "rgba(0, 0, 0, 0.6)", // Adds a transparent overlay
         backgroundBlendMode: "overlay",
       }}
