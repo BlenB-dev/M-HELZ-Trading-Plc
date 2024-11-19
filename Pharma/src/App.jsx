@@ -13,8 +13,11 @@ import {
   Footer,
   Medicine,
   Aboutus,
+  Testimonials,
 } from "./components";
 import Mission from "./components/Mission";
+import Contactus from "./components/Contactus";
+import MoreContactus from "./components/MoreContactus";
 
 const Maincontent = () => {
   const location = useLocation();
@@ -23,6 +26,7 @@ const Maincontent = () => {
       {location.pathname === "/Aboutus" && <Navbar />}
       {location.pathname === "/" && <Navbar />}
       {location.pathname === "/Mission" && <Navbar />}
+      {location.pathname === "/MoreContactus" && <Navbar />}
 
       <Routes>
         <Route
@@ -32,12 +36,15 @@ const Maincontent = () => {
               <Hero />
               <Medicine />
               <Business />
+              <Testimonials />
+              <Contactus />
               <Footer />
             </>
           }
         />
         <Route path="/Aboutus" element={<Aboutus />} />
         <Route path="/Mission" element={<Mission />} />
+        <Route path="/MoreContactus" element={<MoreContactus />} />
       </Routes>
     </div>
   );

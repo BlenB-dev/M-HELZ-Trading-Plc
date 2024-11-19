@@ -25,6 +25,18 @@ export const navLinks = [
     to: "/Mission",
     icon: "fa-solid fa-chart-line",
   },
+  // {
+  //   id: 4,
+  //   label: "Our Services",
+  //   to: "/Mission",
+  //   icon: "fa-solid fa-chart-line",
+  // },
+  {
+    id: 5,
+    label: "Contact us",
+    to: "/MoreContactus",
+    icon: "fa-solid fa-chart-line",
+  },
 ];
 
 export const features = [
@@ -55,26 +67,26 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
+      "Access to quality pharmaceuticals has transformed healthcare for our community, ensuring better health outcomes and a brighter future.",
+    name: "Dr. Helen Tesfaye",
+    title: "Healthcare Advocate",
     img: people01,
   },
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
-    img: people02,
+      "Partnering with M HELZ Trading has elevated our pharmaceutical standards and strengthened global collaborations in healthcare.",
+    name: "Blen Alemu",
+    title: "Pharmacy Manager",
+    img: people03,
   },
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
-    img: people03,
+      "M HELZ Trading's commitment to delivering safe and effective medications has revolutionized the pharmaceutical landscape in Ethiopia.",
+    name: "Dr. Edil Worku",
+    title: "Medical Specialist",
+    img: people02,
   },
 ];
 

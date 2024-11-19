@@ -17,6 +17,25 @@ const Aboutus = () => (
       <h2 className={`${styles.heading2}`}>About Us</h2>
     </div>
 
+    {/* Video Section */}
+    <div className="relative bg-black/50 py-10 px-4 sm:px-8 lg:px-16">
+      <h3 className="text-2xl font-semibold text-center text-white mb-4">
+        Learn More About M HELZ Trading
+      </h3>
+      <div className="flex justify-center">
+        <video
+          className="rounded-lg shadow-lg w-full max-w-4xl"
+          autoPlay
+          loop
+          muted
+          controls
+        >
+          <source src="/src/assets/sample7.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
     {/* About Us Section */}
     <section
       className={`${layout.section} relative overflow-hidden text-white py-10 px-4 sm:px-8 lg:px-16`}
@@ -27,7 +46,7 @@ const Aboutus = () => (
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* About Us Content */}
         <div className="text-center md:text-left">
-          <p className={`${styles.paragraph} mt-5 md:mt-0 mx-auto max-w-2xl`}>
+          <p className={`${styles.paragraph} mt-5 md:-mt-14 mx-auto max-w-2xl`}>
             Established in 2024, <strong>M HELZ Trading Plc</strong> is a
             leading pharmaceutical importing company based in Ethiopia. We
             specialize in sourcing high-quality pharmaceutical products to meet

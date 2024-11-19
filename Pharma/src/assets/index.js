@@ -22,10 +22,17 @@ import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
-import people03 from "./people03.png";
+import people03 from "./people03.jpg";
 import logo1 from "./logo1.png";
 import sideimage from "./sideimage.png";
 import hands from "./hands.png";
+import sample1 from "./sample1.mp4";
+import sample2 from "./sample2.mp4";
+import sample3 from "./sample3.mp4";
+import sample4 from "./sample4.mp4";
+import sample5 from "./sample5.mp4";
+import sample6 from "./sample6.mp4";
+import sample7 from "./sample7.mp4";
 export {
   airbnb,
   bill,
@@ -54,4 +61,11 @@ export {
   people02,
   people03,
   logo1,
+  sample1,
+  sample2,
+  sample3,
+  sample4,
+  sample5,
+  sample6,
+  sample7,
 };

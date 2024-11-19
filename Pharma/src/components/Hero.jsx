@@ -10,7 +10,7 @@ const Hero = () => (
       <div className="flex flex-row  items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
         <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
         <p className={`${styles.paragraph}`}>
-          <span className="text-white px-1"></span>M HELZ Trading Plc
+          <span className="text-white px-1 "></span>M HELZ Trading Plc
         </p>
       </div>
       <div className="flex flex-row justify-between items-center w-full ">
@@ -18,8 +18,10 @@ const Hero = () => (
           className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px]
         text-white ss:leading-[100px] leading-[75px]"
         >
-          M HELZ Trading Plc <br className="sm-block hidden" />
+          M HELZ Trading Plc
+          <br className="sm-block hidden" />
           <span className="text-gradient ">
+            {" "}
             Import's <br />
             Medicine's
           </span>

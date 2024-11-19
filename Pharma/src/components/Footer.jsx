@@ -1,142 +1,102 @@
+import React from "react";
 import {
   FaFacebookF,
-  FaTwitter,
   FaInstagram,
-  FaYoutube,
-  FaLinkedinIn,
+  FaTwitter,
+  FaTelegramPlane,
+  FaTiktok,
+  FaEnvelope,
 } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="py-10 mt-13 px-4 text-white">
-      <div className="container mx-auto">
-        <div className="container mx-auto  -mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
-          {/* About Us Section */}
-          <div className="mt-6">
-            <h3 className="text-xl font-semibold mb-4">Our Services</h3>
-            <ul className="text-white space-y-2">
-              <li>
-                <p>
-                  <span className="font-bold">
-                    Importation of Pharmaceuticals
-                  </span>
-                  <p>
-                    Sourcing a wide range of medications, (including generics
-                    and branded products), Medical Equipments, Devices,
-                    Instruments and Supplies.
-                  </p>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <span className="font-bold "> Regulatory Compliance</span>{" "}
-                  <p>
-                    {" "}
-                    Navigating the complexities of Ethiopian pharmaceutical
-                    regulations to ensure smooth import processes
-                  </p>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <span className="font-bold">Market Insights</span>
-                  <p>
-                    {" "}
-                    Providing valuable market intelligence to our partners for
-                    informed decision-making.
-                  </p>
-                </p>
-              </li>
-            </ul>
+    <footer className="bg-gray-900 text-white py-10">
+      <div className="container mx-auto px-6">
+        {/* Responsive Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Logo Section */}
+          <div className="flex items-center space-x-3">
+            <img
+              src="" // Replace with your logo path
+              alt=""
+              className="h-10"
+            />
+            <h1 className="text-xl font-bold text-orange-500">M HELZ</h1>
           </div>
 
-          {/* Our Core Values */}
-          <div className="mt-6">
-            <h3 className="text-xl font-semibold mb-4">Why Partner with Us?</h3>
-            <ul className="text-white space-y-2">
-              <li>
-                <p>
-                  <span className="font-bold">Local Expertise</span>
-                  <p>
-                    In-depth knowledge of the Ethiopian market and regulatory
-                    environment.
-                  </p>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <span className="font-bold ">Established Network</span>
-                  <p>
-                    Strong relationships with healthcare providers and
-                    distributors across Ethiopia and the african continent.
-                  </p>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <span className="font-bold">Commitment to Quality</span>
-                  <p>
-                    Rigorous quality control measures to ensure product safety
-                    and efficacy.
-                  </p>
-                </p>
-              </li>
-            </ul>
-          </div>
-
-          {/* Get In Touch Section */}
-          <div className="mt-6">
+          {/* Contact Section */}
+          <div>
             <h3 className="text-xl font-semibold mb-4">Get In Touch</h3>
-            <ul className="text-white space-y-2">
+            <ul className="space-y-2">
               <li>
-                {" "}
-                <span className="font-bold ">Location</span> Summit fiyelbet
-                road
+                <span className="font-bold">Location:</span> Summit Fiyelbet
+                Road
               </li>
               <li>📧 mhelztrading@gmail.com</li>
-              <li>
-                <p>
-                  📞 + 251 96 821 4723{" "}
-                  <p className="mt-[-25px] ml-[170px]">Dr. Helen</p>{" "}
-                </p>
-
-                <p>
-                  📞 +251946724253
-                  <p className="mt-[-25px] ml-[170px]">Dr. Edil</p>
-                </p>
-                <p>
-                  <div className="mt-4 absolute">
-                    <FaTwitter />
-                  </div>
-                  <p className="mt-[10px] absolute ml-[26px]">Dr. Helen</p>{" "}
-                </p>
-                <p>
-                  <div className="mt-10 absolute">
-                    <a href="https://www.linkedin.com/in/blen-bete-765246212/">
-                      <FaInstagram />
-                    </a>
-                  </div>
-                  <p className="mt-[38px] absolute ml-[26px]">Dr. Edil</p>{" "}
-                </p>
-
-                {/* <a href="#" className="hover:text-gray-300">
-                  <FaYoutube />
-                </a>
-                <a href="#" className="hover:text-gray-300">
-                  <FaLinkedinIn />
-                </a> */}
-              </li>
+              <li>📞 +251 96 821 4723 - Dr. Helen</li>
+              <li>📞 +251 946 724 253 - Dr. Edil</li>
             </ul>
           </div>
+
+          {/* Social Media Section */}
+          <div className="text-center md:text-left">
+            <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
+            <div className="flex flex-wrap justify-center md:justify-start gap-4">
+              <a
+                href="#"
+                className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-gray-700 transition"
+              >
+                <FaFacebookF />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-gray-700 transition"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-gray-700 transition"
+              >
+                <FaTwitter />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-gray-700 transition"
+              >
+                <FaTelegramPlane />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-gray-700 transition"
+              >
+                <FaTiktok />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-gray-700 transition"
+              >
+                <FaEnvelope />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer Bottom Text */}
+        <div className="mt-10 text-center text-sm">
+          <p>© 2024 M HELZ Pharma.</p>
+          <p>Designed and developed by Blue Technology Solutions.</p>
         </div>
       </div>
 
-      <div className="container mx-auto flex justify-between items-center mt-8">
-        <p className="text-lg text-black">
-          &copy;2024 Biz-Connect. All rights reserved.
-        </p>
-
-        <div className="flex space-x-4"></div>
+      {/* Scroll to Top Button */}
+      <div className="fixed bottom-6 right-6">
+        <a
+          href="#top"
+          className="bg-orange-500 text-white w-12 h-12 flex items-center justify-center rounded-full shadow-lg hover:bg-orange-600 transition"
+        >
+          ↑
+        </a>
       </div>
     </footer>
   );
