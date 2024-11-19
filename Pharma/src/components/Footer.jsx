@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-10">
+    <footer className=" text-white py-10">
       <div className="container mx-auto px-6">
         {/* Responsive Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -85,7 +85,7 @@ const Footer = () => {
         {/* Footer Bottom Text */}
         <div className="mt-10 text-center text-sm">
           <p>© 2024 M HELZ Pharma.</p>
-          <p>Designed and developed by Blue Technology Solutions.</p>
+          <p>Designed by Blue B.</p>
         </div>
       </div>
 
