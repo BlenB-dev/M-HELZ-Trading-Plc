@@ -14,6 +14,10 @@ import {
   shield,
   star,
   logo1,
+  med1,
+  med2,
+  med3,
+  med4,
 } from "../assets";
 
 export const navLinks = [
@@ -94,22 +98,55 @@ export const feedback = [
 export const Medicines = [
   {
     id: "med-1",
-    title: "Paracetamol (Tylenol)",
-    value: "3800+",
-    image: logo1,
+    name: "Paracetamol (Tylenol)",
+    details: "sdlkjflksdjf",
+    contact: "0911615712",
+    image: med1,
   },
   {
     id: "med-2",
-    title: "Ibuprofen (Advil, Motrin) ",
-    value: "230+",
+    contact: "0987656789",
+    details: "sdlkjflksdjf",
+    name: "TYLENOL ",
+    image: med2,
   },
   {
     id: "med-3",
-    title: "Aspirin ",
-    value: "30+",
+    contact: "0987654345",
+    details: "sdlkjflksdjf",
+    name: "Amoxicillin ",
+    image: med3,
+  },
+  {
+    id: "med-4",
+    contact: "0987654345",
+    details: "sdlkjflksdjf",
+    name: "Amoxicillin",
+    image: med4,
   },
 ];
-
+export const MoreInfoMedicines = [
+  {
+    id: "med-1",
+    name: "Paracetamol (Tylenol)",
+    image: logo1,
+    contact: "0987654356",
+  },
+  {
+    id: "med-2",
+    name: "Ibuprofen (Advil, Motrin) ",
+    details: "kdfsjflksj",
+    image: logo1,
+    contact: "0987654356",
+  },
+  {
+    id: "med-3",
+    name: "Aspirin ",
+    image: logo1,
+    details: "kdlsjflksdj",
+    contact: "0987654356",
+  },
+];
 export const footerLinks = [
   {
     title: "Useful Links",

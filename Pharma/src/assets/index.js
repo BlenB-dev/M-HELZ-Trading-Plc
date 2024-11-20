@@ -26,9 +26,17 @@ import people03 from "./people03.jpg";
 import logo1 from "./logo1.png";
 import sideimage from "./sideimage.png";
 import hands from "./hands.png";
+import med1 from "./med1.jpg";
+import med2 from "./med2.jpg";
+import med3 from "./med3.jpg";
+import med4 from "./med4.jpg";
 
 import sample002 from "./sample002.mp4";
 export {
+  med1,
+  med2,
+  med3,
+  med4,
   airbnb,
   bill,
   hands,

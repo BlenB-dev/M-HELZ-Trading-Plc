@@ -9,6 +9,11 @@ module.exports = {
           "50%": { transform: "scale(1.1)", opacity: "1" },
           "100%": { transform: "scale(1)", opacity: "1" },
         },
+        slideBoth: {
+          "0%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(100%)" }, // Slide to the right
+          "100%": { transform: "translateX(0)" }, // Return to the left
+        },
         slide: {
           "0%": { transform: "translateX(-20px)", opacity: "0" },
           "100%": { transform: "translateX(0)", opacity: "1" },
@@ -16,7 +21,8 @@ module.exports = {
       },
       animation: {
         pop: "pop 14s ease-out infinite", // Loop the pop animation every 1.5s
-        slide: "slide 14s ease-out infinite", // Loop the slide animation every 2s
+        slide: "slide 14s ease-out infinite",
+        "slide-both": "slideBoth 80s linear infinite", // Loop the slide animation every 2s
       },
       colors: {
         primary: "#00040f",
