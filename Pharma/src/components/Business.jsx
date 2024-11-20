@@ -18,7 +18,7 @@ const Business = () => {
       title: "Well-staffed professionals",
       description:
         "Well-staffed with professional pharmacists and bio-medical engineers.",
-      video: "/src/assets/sample2.mp4", // Replace with another video path
+      video: "/src/assets/sample1.mp4", // Replace with another video path
     },
     {
       id: 3,
@@ -82,7 +82,7 @@ const Business = () => {
           ) : (
             <div>
               <video
-                src="/src/assets/sample2.mp4"
+                src="/src/assets/sample1.mp4"
                 autoPlay
                 loop
                 muted
