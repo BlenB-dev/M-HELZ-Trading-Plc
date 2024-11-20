@@ -11,7 +11,7 @@ const Business = () => {
       title: "Importing high-quality products",
       description:
         "We import high-quality products from reputable manufacturers around the world.",
-      video: "/src/assets/sample3.mp4", // Replace with the actual video path
+      video: "/src/assets/sample001.mp4", // Replace with the actual video path
     },
     // {
     //   id: 2,
