@@ -26,12 +26,7 @@ import people03 from "./people03.jpg";
 import logo1 from "./logo1.png";
 import sideimage from "./sideimage.png";
 import hands from "./hands.png";
-import sample1 from "./sample1.mp4";
-
-import sample3 from "./sample3.mp4";
-import sample4 from "./sample4.mp4";
-
-import sample6 from "./sample6.mp4";
+import sample from "./sample.mp4";
 
 export {
   airbnb,
@@ -61,8 +56,5 @@ export {
   people02,
   people03,
   logo1,
-  sample1,
-  sample3,
-  sample4,
-  sample6,
+  sample,
 };
