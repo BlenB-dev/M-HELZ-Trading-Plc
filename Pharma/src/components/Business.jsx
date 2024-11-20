@@ -90,9 +90,15 @@ const Business = () => {
               </p>
             </div>
           ) : (
-            <p className="text-sm sm:text-base text-gray-400 text-center">
-              Click on a feature to learn more.
-            </p>
+            <div>
+              <video
+                src="/src/assets/sample5.mp4"
+                autoPlay
+                loop
+                muted
+                className="w-full max-w-md rounded-lg shadow-lg"
+              ></video>
+            </div>
           )}
         </div>
       </div>
