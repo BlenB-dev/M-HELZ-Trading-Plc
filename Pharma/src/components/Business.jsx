@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import LazyLoad from "react-lazy-load";
 const Business = () => {
   const [selectedFeature, setSelectedFeature] = useState(null);
 
