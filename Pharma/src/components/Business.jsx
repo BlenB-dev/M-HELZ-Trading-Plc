@@ -3,7 +3,6 @@ import LazyLoad from "react-lazy-load";
 const Business = () => {
   const [selectedFeature, setSelectedFeature] = useState(null);
 
-  // Feature data
   const features = [
     {
       id: 1,
