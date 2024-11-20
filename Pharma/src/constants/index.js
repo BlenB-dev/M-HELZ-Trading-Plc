@@ -30,12 +30,12 @@ export const navLinks = [
     to: "/Mission",
     icon: "fa-solid fa-chart-line",
   },
-  // {
-  //   id: 4,
-  //   label: "Our Services",
-  //   to: "/Mission",
-  //   icon: "fa-solid fa-chart-line",
-  // },
+  {
+    id: 4,
+    label: "Our Services",
+    to: "/Service",
+    icon: "fa-solid fa-chart-line",
+  },
   {
     id: 5,
     label: "Contact us",
