@@ -10,20 +10,25 @@ import styles, { layout } from "../style";
 import Footer from "./Footer"; // Import Footer component
 
 const Aboutus = () => (
-  <>
+  <div className=" text-white">
     {/* About Us Header with Icon */}
-    <div className="flex items-center mt-[-70px] justify-center mb-12 animate-fade-in">
-      <FaRegBuilding className="text-5xl text-yellow-500 absolute top-[116px] left-[3px] sm:top-32 sm:left-20 lg:top-30 lg:left-[380px] animate-pulse" />
+    <div className="flex flex-col items-center text-center mb-12 px-4">
+      <div className="flex items-center space-x-4 sm:space-x-6 lg:space-x-8">
+        <FaRegBuilding className="text-4xl sm:text-5xl text-yellow-500 animate-pulse" />
+        <h1 className="text-2xl text-gradient sm:text-3xl lg:text-4xl font-bold">
+          About Us
+        </h1>
+      </div>
     </div>
 
     {/* Video Section */}
     <div className="relative bg-black/50 py-10 px-4 sm:px-8 lg:px-16">
-      <h3 className="text-2xl font-semibold text-center text-white mb-4">
+      <h3 className="text-2xl sm:text-3xl font-semibold text-center text-white mb-4">
         Learn More About M HELZ Trading
       </h3>
       <div className="flex justify-center">
         <video
-          className="rounded-lg shadow-lg w-full max-w-4xl"
+          className="rounded-lg shadow-lg w-full max-w-[90%] sm:max-w-[80%] lg:max-w-4xl"
           autoPlay
           loop
           muted
@@ -38,13 +43,10 @@ const Aboutus = () => (
     <section
       className={`${layout.section} relative overflow-hidden text-white py-10 px-4 sm:px-8 lg:px-16`}
     >
-      {/* Decorative Background */}
-      <div className="absolute inset-0 opacity-10 "></div>
-
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* About Us Content */}
         <div className="text-center md:text-left">
-          <p className={`${styles.paragraph} mt-5 md:-mt-14 mx-auto max-w-2xl`}>
+          <p className="mt-5 md:mt-8 mx-auto max-w-2xl text-base sm:text-lg lg:text-xl">
             Established in 2024, <strong>M HELZ Trading Plc</strong> is a
             leading pharmaceutical importing company based in Ethiopia. We
             specialize in sourcing high-quality pharmaceutical products to meet
@@ -101,7 +103,7 @@ const Aboutus = () => (
 
     {/* Footer Section */}
     <Footer />
-  </>
+  </div>
 );
 
 export default Aboutus;

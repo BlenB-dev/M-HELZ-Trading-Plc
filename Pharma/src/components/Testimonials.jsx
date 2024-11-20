@@ -32,7 +32,10 @@ const Testimonials = () => (
     {/* Feedback Cards */}
     <div className="flex flex-wrap sm:justify-center justify-center w-full feedback-container relative z-[1]">
       {feedback.map((card) => (
-        <div key={card.id} className="w-full sm:w-[45%] md:w-[30%] lg:w-[28%] ">
+        <div
+          key={card.id}
+          className="w-full sm:w-[45%] md:w-[30%] lg:w-[28%] p-4"
+        >
           <FeedbackCard {...card} />
         </div>
       ))}

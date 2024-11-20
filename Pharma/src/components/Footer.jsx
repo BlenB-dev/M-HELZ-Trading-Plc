@@ -83,7 +83,7 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom Text */}
-        <div className="mt-10 text-center text-sm">
+        <div className="mt-10 -ml-[150px] text-center text-sm">
           <p>© 2024 M HELZ Pharma.</p>
           <p>Designed by Blue B.</p>
         </div>
@@ -93,7 +93,7 @@ const Footer = () => {
       <div className="fixed bottom-6 right-6">
         <a
           href="#top"
-          className="bg-orange-500 text-white w-12 h-12 flex items-center justify-center rounded-full shadow-lg hover:bg-orange-600 transition"
+          className="bg-orange-500 z-50 text-white w-12 h-12 flex items-center justify-center rounded-full shadow-lg hover:bg-orange-600 transition"
         >
           ↑
         </a>

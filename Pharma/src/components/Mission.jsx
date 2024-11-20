@@ -67,7 +67,7 @@ const Mission = () => (
         </div>
 
         {/* Right Section: Moving Video */}
-        <div className="relative overflow-hidden mt-[-300px] rounded-lg shadow-lg ml-10">
+        <div className="relative overflow-hidden  rounded-lg shadow-lg ml-10">
           {/* Video Element */}
           <video
             className="w-full -ml-10  h-full object-cover rounded-lg"

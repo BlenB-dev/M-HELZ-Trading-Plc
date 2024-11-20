@@ -17,7 +17,7 @@ const MoreContactus = () => {
           {/* Left Section: Form */}
           <div>
             {/* Header Section */}
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center lg:text-left text-white mt-5 lg:mt-10">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center lg:text-left text-gradient mt-5 lg:mt-10">
               Get in Touch ✨
             </h1>
             <p className="text-white text-center lg:text-left mt-5 lg:mt-9 text-sm sm:text-base">

@@ -12,12 +12,12 @@ const Contactus = () => {
     >
       {/* Content Section */}
       <div className="flex-grow flex items-center justify-center">
-        <div className="rounded-xl shadow-lg p-6 sm:p-8 lg:p-12 max-w-4xl mt-[-240px] w-full ">
+        <div className="rounded-xl shadow-lg p-6 sm:p-8 lg:p-12 max-w-4xl w-full ">
           {/* Header Section */}
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-gradient mt-5 lg:mt-10">
             Get in Touch ✨
           </h1>
-          <p className="text-white text-center mt-5 lg:mt-9 text-sm sm:text-base">
+          <p className="text-gray-300 text-center mt-5 lg:mt-9 text-sm sm:text-base">
             Have questions? We're here to help! Fill out the form below, and
             we'll get back to you as soon as possible.
           </p>
@@ -32,7 +32,7 @@ const Contactus = () => {
                 <input
                   type="text"
                   placeholder="John Doe"
-                  className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
+                  className="w-full p-3 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400 text-white"
                 />
               </div>
               <div>
@@ -42,7 +42,7 @@ const Contactus = () => {
                 <input
                   type="email"
                   placeholder="john.doe@example.com"
-                  className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
+                  className="w-full p-3 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400 text-white"
                 />
               </div>
             </div>
@@ -53,7 +53,7 @@ const Contactus = () => {
               <textarea
                 rows="4"
                 placeholder="Write your message here..."
-                className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
+                className="w-full p-3 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400 text-white"
               ></textarea>
             </div>
             <button
