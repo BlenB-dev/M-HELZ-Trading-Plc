@@ -103,7 +103,7 @@ const MoreContactus = () => {
               muted
               loop
             >
-              {/* <source src="/src/assets/sample4.mp4" type="video/mp4" /> */}
+              <source src="/sample4.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>

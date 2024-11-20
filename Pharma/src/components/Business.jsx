@@ -11,21 +11,21 @@ const Business = () => {
       title: "Importing high-quality products",
       description:
         "We import high-quality products from reputable manufacturers around the world.",
-      video: "/src/assets/sample002.mp4", // Replace with the actual video path
+      video: "/sample3.mp4", // Replace with the actual video path
     },
     {
       id: 2,
       title: "Well-staffed professionals",
       description:
         "Well-staffed with professional pharmacists and bio-medical engineers.",
-      video: "/sample001.mp4", // Replace with another video path
+      video: "/sample2.mp4", // Replace with another video path
     },
-    // {
-    //   id: 3,
-    //   title: "We provide training sessions",
-    //   description: "Comprehensive training sessions for effective product use.",
-    //   video: "/src/assets/sample01.mp4", // Replace with another video path
-    // },
+    {
+      id: 3,
+      title: "We provide training sessions",
+      description: "Comprehensive training sessions for effective product use.",
+      video: "/sample1.mp4", // Replace with another video path
+    },
   ];
 
   return (
@@ -82,7 +82,7 @@ const Business = () => {
           ) : (
             <div>
               <video
-                src="/sample1.mp4"
+                src="/sample5.mp4"
                 autoPlay
                 loop
                 muted

@@ -6,6 +6,7 @@ import {
   FaHandHoldingHeart,
 } from "react-icons/fa";
 import styles, { layout } from "../style";
+import Button from "./Button";
 import Footer from "./Footer"; // Import Footer component
 
 const Aboutus = () => (
@@ -23,13 +24,13 @@ const Aboutus = () => (
       </h3>
       <div className="flex justify-center">
         <video
-          className="rounded-lg shadow-lg w-full max-w-3xl"
+          className="rounded-lg shadow-lg w-full max-w-4xl"
           autoPlay
           loop
           muted
           controls
         >
-          {/* <source src="/src/assets/sample001.mp4" type="video/mp4" /> */}
+          <source src="/sample7.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -93,6 +94,13 @@ const Aboutus = () => (
               </p>
             </div>
           </div>
+        </div>
+
+        {/* Call-to-Action Button */}
+        <div className="flex justify-center mt-10">
+          <Button styles="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg shadow-lg hover:shadow-xl">
+            Contact Us
+          </Button>
         </div>
       </div>
 
