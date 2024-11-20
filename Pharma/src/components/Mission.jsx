@@ -7,7 +7,7 @@ import {
   FaUsers,
 } from "react-icons/fa";
 import styles, { layout } from "../style";
-import Button from "./Button";
+
 import Footer from "./Footer";
 
 const FeatureCard = ({ icon, title, content }) => (
