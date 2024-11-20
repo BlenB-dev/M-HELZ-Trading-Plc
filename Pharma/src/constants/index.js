@@ -13,6 +13,7 @@ import {
   send,
   shield,
   star,
+  logo1,
 } from "../assets";
 
 export const navLinks = [
@@ -95,6 +96,7 @@ export const Medicines = [
     id: "med-1",
     title: "Paracetamol (Tylenol)",
     value: "3800+",
+    image: logo1,
   },
   {
     id: "med-2",

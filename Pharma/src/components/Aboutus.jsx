@@ -6,7 +6,7 @@ import {
   FaHandHoldingHeart,
 } from "react-icons/fa";
 import styles, { layout } from "../style";
-import Button from "./Button";
+
 import Footer from "./Footer"; // Import Footer component
 
 const Aboutus = () => (
@@ -94,13 +94,6 @@ const Aboutus = () => (
               </p>
             </div>
           </div>
-        </div>
-
-        {/* Call-to-Action Button */}
-        <div className="flex justify-center mt-10">
-          <Button styles="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg shadow-lg hover:shadow-xl">
-            Contact Us
-          </Button>
         </div>
       </div>
 
