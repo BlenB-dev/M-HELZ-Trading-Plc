@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPills, FaRegBuilding, FaChartLine } from "react-icons/fa";
+import Footer from "./Footer";
 
 const Service = () => {
   return (
@@ -87,6 +88,7 @@ const Service = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
