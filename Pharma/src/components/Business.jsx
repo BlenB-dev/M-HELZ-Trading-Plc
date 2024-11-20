@@ -91,13 +91,15 @@ const Business = () => {
             </div>
           ) : (
             <div>
-              <video
-                src="/src/assets/sample5.mp4"
-                autoPlay
-                loop
-                muted
-                className="w-full max-w-md rounded-lg shadow-lg"
-              ></video>
+              <LazyLoad>
+                <video
+                  src="/sample5.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  className="w-full max-w-md rounded-lg shadow-lg"
+                ></video>
+              </LazyLoad>
             </div>
           )}
         </div>
