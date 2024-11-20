@@ -13,13 +13,13 @@ const Business = () => {
         "We import high-quality products from reputable manufacturers around the world.",
       video: "/src/assets/sample002.mp4", // Replace with the actual video path
     },
-    // {
-    //   id: 2,
-    //   title: "Well-staffed professionals",
-    //   description:
-    //     "Well-staffed with professional pharmacists and bio-medical engineers.",
-    //   video: "/src/assets/sample2.mp4", // Replace with another video path
-    // },
+    {
+      id: 2,
+      title: "Well-staffed professionals",
+      description:
+        "Well-staffed with professional pharmacists and bio-medical engineers.",
+      video: "/sample001.mp4", // Replace with another video path
+    },
     // {
     //   id: 3,
     //   title: "We provide training sessions",
