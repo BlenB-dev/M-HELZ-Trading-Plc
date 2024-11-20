@@ -12,9 +12,8 @@ import Footer from "./Footer"; // Import Footer component
 const Aboutus = () => (
   <>
     {/* About Us Header with Icon */}
-    <div className="flex items-center justify-center mb-12 animate-fade-in">
-      <FaRegBuilding className="text-5xl text-yellow-500 mr-4 animate-pulse" />
-      <h2 className={`${styles.heading2}`}>About Us</h2>
+    <div className="flex items-center mt-[-70px] justify-center mb-12 animate-fade-in">
+      <FaRegBuilding className="text-5xl text-yellow-500 absolute top-[116px] left-[3px] sm:top-32 sm:left-20 lg:top-30 lg:left-[380px] animate-pulse" />
     </div>
 
     {/* Video Section */}
