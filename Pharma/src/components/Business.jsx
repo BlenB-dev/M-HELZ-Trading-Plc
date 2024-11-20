@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styles from "../style";
 
 const Business = () => {
   const [selectedFeature, setSelectedFeature] = useState(null);
@@ -69,17 +68,20 @@ const Business = () => {
         <div className="flex flex-col items-center space-y-4">
           {selectedFeature ? (
             <div>
-              <video
-                src={
-                  features.find((feature) => feature.id === selectedFeature)
-                    .video
-                }
-                autoPlay
-                loop
-                preload="auto"
-                muted
-                className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] rounded-lg shadow-lg"
-              />
+              <LazyLoad>
+                <video
+                  src={
+                    features.find((feature) => feature.id === selectedFeature)
+                      .video
+                  }
+                  autoPlay
+                  loop
+                  preload="auto"
+                  muted
+                  className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] rounded-lg shadow-lg"
+                />
+              </LazyLoad>
+
               <p className="text-sm sm:text-base text-white text-center mt-4">
                 {
                   features.find((feature) => feature.id === selectedFeature)
