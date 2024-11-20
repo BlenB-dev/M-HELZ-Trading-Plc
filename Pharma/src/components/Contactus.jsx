@@ -12,9 +12,9 @@ const Contactus = () => {
     >
       {/* Content Section */}
       <div className="flex-grow flex items-center justify-center">
-        <div className="rounded-xl shadow-lg p-6 sm:p-8 lg:p-12 max-w-4xl mt-[-95px] w-full bg-white/10 backdrop-blur-lg">
+        <div className="rounded-xl shadow-lg p-6 sm:p-8 lg:p-12 max-w-4xl mt-[-240px] w-full ">
           {/* Header Section */}
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-white mt-5 lg:mt-10">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-gradient mt-5 lg:mt-10">
             Get in Touch ✨
           </h1>
           <p className="text-white text-center mt-5 lg:mt-9 text-sm sm:text-base">
@@ -58,7 +58,7 @@ const Contactus = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-purple-600 text-white text-base sm:text-lg font-semibold py-3 rounded-lg hover:bg-purple-700 transition-all duration-300"
+              className="w-full bg-gradient-to-r from-pink-500 to-blue-500 text-white text-base sm:text-lg font-semibold py-3 rounded-lg shadow-lg hover:opacity-90 transition-all duration-300"
             >
               Send Message 🚀
             </button>
