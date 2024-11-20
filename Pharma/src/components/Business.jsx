@@ -29,38 +29,44 @@ const Business = () => {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto p-6 ">
-      <h2 className="text-5xl font-bold text-center mb-6 text-white">
-        <span className="animate-pop text-gradient  "> Why Choose Us</span>
+    <div className="max-w-5xl mx-auto p-6">
+      {/* Header */}
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-6 text-white">
+        <span className="animate-pop text-gradient"> Why Choose Us</span>
       </h2>
       <p className="text-center mb-8 text-white">
         At HELZ, we understand that choosing the right product is a crucial
         decision for your success.
       </p>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      {/* Layout */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Left Section: List */}
-        <div className="text-white p-4">
+        <div className="text-white space-y-6">
           {features.map((feature) => (
             <div
               key={feature.id}
-              className={`cursor-pointer mb-4 text-2xl feedback-card ${
-                selectedFeature === feature.id ? "text-white" : ""
+              className={`cursor-pointer p-4 bg-gray-800 rounded-lg shadow-md transform hover:scale-105 transition duration-300 ${
+                selectedFeature === feature.id
+                  ? "ring-2 ring-purple-500 text-white"
+                  : ""
               }`}
               onClick={() => setSelectedFeature(feature.id)}
             >
-              <h3>
+              <h3 className="text-xl sm:text-2xl font-semibold">
                 {feature.id}. {feature.title}
               </h3>
               {selectedFeature === feature.id && (
-                <p className="ml-7">{feature.description}</p>
+                <p className="text-sm sm:text-base mt-2">
+                  {feature.description}
+                </p>
               )}
             </div>
           ))}
         </div>
 
-        {/* Right Section: Video and Paragraph */}
-        <div className="p-4 flex flex-col items-center">
+        {/* Right Section: Video and Description */}
+        <div className="flex flex-col items-center space-y-4">
           {selectedFeature ? (
             <div>
               <video
@@ -70,9 +76,10 @@ const Business = () => {
                 }
                 autoPlay
                 loop
-                className="mb-4 w-full max-w-xs rounded-lg shadow-lg"
+                muted
+                className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] rounded-lg shadow-lg"
               />
-              <p className={`${styles.paragraph}`}>
+              <p className="text-sm sm:text-base text-white text-center mt-4">
                 {
                   features.find((feature) => feature.id === selectedFeature)
                     .description
@@ -80,15 +87,9 @@ const Business = () => {
               </p>
             </div>
           ) : (
-            <div>
-              <video
-                src="/sample5.mp4"
-                autoPlay
-                loop
-                muted
-                className="w-full max-w-md rounded-lg shadow-lg"
-              ></video>
-            </div>
+            <p className="text-sm sm:text-base text-gray-400 text-center">
+              Click on a feature to learn more.
+            </p>
           )}
         </div>
       </div>

@@ -90,10 +90,10 @@ const Footer = () => {
       </div>
 
       {/* Scroll to Top Button */}
-      <div className="fixed bottom-6 right-6">
+      <div className="fixed bottom-6 right-6 z-[9999]">
         <a
           href="#top"
-          className="bg-orange-500 z-50 text-white w-12 h-12 flex items-center justify-center rounded-full shadow-lg hover:bg-orange-600 transition"
+          className="bg-orange-500 text-white w-12 h-12 flex items-center justify-center rounded-full shadow-lg hover:bg-orange-600 transition-all duration-300"
         >
           ↑
         </a>
