@@ -39,7 +39,7 @@ const Aboutus = () => (
       className={`${layout.section} relative overflow-hidden text-white py-10 px-4 sm:px-8 lg:px-16`}
     >
       {/* Decorative Background */}
-      <div className="absolute inset-0 opacity-10  bg-cover"></div>
+      <div className="absolute inset-0 opacity-10 "></div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* About Us Content */}

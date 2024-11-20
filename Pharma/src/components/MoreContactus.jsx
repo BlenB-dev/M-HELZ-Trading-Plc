@@ -5,7 +5,7 @@ import Footer from "./Footer";
 const MoreContactus = () => {
   return (
     <div
-      className="min-h-screen flex flex-col justify-between px-5 bg-cover bg-center"
+      className="min-h-screen flex flex-col justify-between px-5 "
       style={{
         backgroundColor: "rgba(0, 0, 0, 0.6)", // Adds a transparent overlay
         backgroundBlendMode: "overlay",
@@ -13,7 +13,7 @@ const MoreContactus = () => {
     >
       {/* Content Section */}
       <div className="flex-grow flex items-center justify-center">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 rounded-xl shadow-lg p-6 sm:p-8 lg:p-12 max-w-6xl w-full bg-white/10 backdrop-blur-lg">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 rounded-xl shadow-lg p-6 sm:p-8 lg:p-12 max-w-6xl w-full ">
           {/* Left Section: Form */}
           <div>
             {/* Header Section */}
