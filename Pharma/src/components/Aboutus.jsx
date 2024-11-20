@@ -28,7 +28,6 @@ const Aboutus = () => (
           autoPlay
           loop
           muted
-          controls
         >
           <source src="/sample7.mp4" type="video/mp4" />
           Your browser does not support the video tag.
