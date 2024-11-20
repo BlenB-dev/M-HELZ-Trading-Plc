@@ -34,7 +34,7 @@ const Testimonials = () => (
       {feedback.map((card) => (
         <div
           key={card.id}
-          className="w-full sm:w-[45%] md:w-[30%] lg:w-[28%] p-4"
+          className="w-full animate-slide  sm:w-[45%] md:w-[30%] lg:w-[28%] p-4"
         >
           <FeedbackCard {...card} />
         </div>
