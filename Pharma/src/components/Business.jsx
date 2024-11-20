@@ -82,7 +82,7 @@ const Business = () => {
           ) : (
             <div>
               <video
-                src="/src/assets/sample002.mp4"
+                src="/src/assets/sample001.mp4"
                 autoPlay
                 loop
                 muted
