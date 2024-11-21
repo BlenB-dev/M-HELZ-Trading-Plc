@@ -3,13 +3,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Contactus = () => {
   return (
-    <div
-      className="min-h-screen flex flex-col justify-between px-5 bg-cover bg-center"
-      style={{
-        backgroundColor: "rgba(0, 0, 0, 0.6)", // Adds a transparent overlay
-        backgroundBlendMode: "overlay",
-      }}
-    >
+    <div className="min-h-screen flex flex-col justify-between px-5 bg-cover bg-center">
       {/* Content Section */}
       <div className="flex-grow flex items-center justify-center">
         <div className="rounded-xl shadow-lg p-6 sm:p-8 lg:p-12 max-w-4xl w-full ">

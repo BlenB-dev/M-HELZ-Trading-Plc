@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import LazyLoad from "react-lazy-load";
+
 const Business = () => {
   const [selectedFeature, setSelectedFeature] = useState(null);
 
+  // Feature data
   const features = [
     {
       id: 1,
@@ -67,19 +68,17 @@ const Business = () => {
         <div className="flex flex-col items-center space-y-4">
           {selectedFeature ? (
             <div>
-              <LazyLoad>
-                <video
-                  src={
-                    features.find((feature) => feature.id === selectedFeature)
-                      .video
-                  }
-                  autoPlay
-                  loop
-                  preload="auto"
-                  muted
-                  className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] rounded-lg shadow-lg"
-                />
-              </LazyLoad>
+              <video
+                src={
+                  features.find((feature) => feature.id === selectedFeature)
+                    .video
+                }
+                autoPlay
+                loop
+                preload="auto"
+                muted
+                className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] rounded-lg shadow-lg"
+              />
 
               <p className="text-sm sm:text-base text-white text-center mt-4">
                 {
@@ -90,15 +89,13 @@ const Business = () => {
             </div>
           ) : (
             <div>
-              <LazyLoad>
-                <video
-                  src="/sample5.mp4"
-                  autoPlay
-                  loop
-                  muted
-                  className="w-full max-w-md rounded-lg shadow-lg"
-                ></video>
-              </LazyLoad>
+              <video
+                src="/sample.mp4"
+                autoPlay
+                loop
+                muted
+                className="w-full max-w-md rounded-lg shadow-lg"
+              ></video>
             </div>
           )}
         </div>
