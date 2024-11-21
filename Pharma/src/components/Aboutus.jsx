@@ -33,7 +33,7 @@ const Aboutus = () => (
           loop
           muted
         >
-          <source src="/sample7.mp4" type="video/mp4" />
+          <source src="/sample07.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

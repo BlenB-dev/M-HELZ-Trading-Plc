@@ -31,7 +31,6 @@ import med2 from "./med2.jpg";
 import med3 from "./med3.jpg";
 import med4 from "./med4.jpg";
 
-import sample002 from "./sample002.mp4";
 export {
   med1,
   med2,
@@ -64,5 +63,4 @@ export {
   people02,
   people03,
   logo1,
-  sample002,
 };
