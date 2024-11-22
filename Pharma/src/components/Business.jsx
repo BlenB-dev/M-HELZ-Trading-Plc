@@ -90,11 +90,12 @@ const Business = () => {
           ) : (
             <div>
               <video
-                src="/sample001.mp4"
+                src="/sample1.mp4"
                 preload="auto"
                 autoPlay
                 loop
                 muted
+                playsinline
                 className="w-full max-w-md rounded-lg shadow-lg"
               ></video>
             </div>
