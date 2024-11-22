@@ -22,7 +22,7 @@ const Aboutus = () => (
     </div>
 
     {/* Video Section */}
-    <div className="relative top-[-37px] py-10 px-4 sm:px-8 lg:px-16">
+    <div className="relative  py-10 px-4 sm:px-8  lg:px-16">
       <div className="flex justify-center">
         <img
           src="/image4.jpg" // Default image when no feature is selected

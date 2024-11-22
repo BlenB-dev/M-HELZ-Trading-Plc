@@ -1,70 +1,39 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { Medicines } from "../constants";
 
 const Medicine = () => {
-  const [selectedMedicine, setSelectedMedicine] = useState(null); // State for the selected medicine
-  const carouselRef = useRef(null); // Reference for the carousel container
-  const isDragging = useRef(false); // Track if the user is dragging
-  const startPosition = useRef(0); // Starting mouse/touch position
-  const scrollLeft = useRef(0); // Carousel scroll position before drag
+  const [Medicine, setMedicine] = useState(null); // State for the selected medicine
+  const carouselRef = useRef(null); // Ref for the carousel container
+  const isDragging = useRef(false); // To track if the user is dragging
+  const startX = useRef(0); // To store the initial X position
+  const scrollLeft = useRef(0); // To store the initial scroll position
 
   const handleSelectMedicine = (medicine) => {
-    setSelectedMedicine(medicine); // Set the selected medicine
+    setMedicine(medicine); // Set the selected medicine
   };
 
   const closeModal = () => {
-    setSelectedMedicine(null); // Close the modal
+    setMedicine(null); // Close the modal
   };
 
-  // Handle the start of drag (both mouse and touch)
-  const handleDragStart = (e) => {
+  const handlePointerDown = (e) => {
     isDragging.current = true;
-    startPosition.current =
-      e.type === "touchstart"
-        ? e.touches[0].pageX
-        : e.pageX - carouselRef.current.offsetLeft;
-    scrollLeft.current = carouselRef.current.scrollLeft;
-    carouselRef.current.style.scrollBehavior = "auto"; // Disable smooth scrolling during drag
+    startX.current = e.pageX || e.touches[0].pageX; // Store the start position
+    scrollLeft.current = carouselRef.current.scrollLeft; // Store the initial scroll position
+    carouselRef.current.style.scrollBehavior = "auto"; // Disable smooth scrolling while dragging
   };
 
-  // Handle dragging (both mouse and touch)
-  const handleDragMove = (e) => {
+  const handlePointerMove = (e) => {
     if (!isDragging.current) return;
-    const x =
-      e.type === "touchmove"
-        ? e.touches[0].pageX
-        : e.pageX - carouselRef.current.offsetLeft;
-    const walk = (x - startPosition.current) * 1.5; // Adjust drag sensitivity
-    carouselRef.current.scrollLeft = scrollLeft.current - walk;
+    const x = e.pageX || e.touches[0].pageX;
+    const walk = (x - startX.current) * -1; // Calculate the distance moved
+    carouselRef.current.scrollLeft = scrollLeft.current + walk;
   };
 
-  // Handle the end of drag (both mouse and touch)
-  const handleDragEnd = () => {
+  const handlePointerUp = () => {
     isDragging.current = false;
     carouselRef.current.style.scrollBehavior = "smooth"; // Re-enable smooth scrolling
   };
-
-  // Auto-slide functionality
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (carouselRef.current && !isDragging.current) {
-        carouselRef.current.scrollBy({
-          left: 300, // Adjust the scroll distance
-          behavior: "smooth",
-        });
-
-        // Reset carousel to the start when reaching the end
-        if (
-          carouselRef.current.scrollLeft + carouselRef.current.offsetWidth >=
-          carouselRef.current.scrollWidth
-        ) {
-          carouselRef.current.scrollTo({ left: 0, behavior: "smooth" });
-        }
-      }
-    }, 3000); // Adjust the timing for auto-slide
-
-    return () => clearInterval(interval); // Cleanup on unmount
-  }, []);
 
   return (
     <section className="py-10">
@@ -81,20 +50,20 @@ const Medicine = () => {
       {/* Sliding Carousel */}
       <div
         ref={carouselRef}
-        className="flex space-x-6 px-4 animate-slide-both overflow-hidden cursor-grab relative"
-        onMouseDown={handleDragStart}
-        onMouseMove={handleDragMove}
-        onMouseUp={handleDragEnd}
-        onMouseLeave={handleDragEnd}
-        onTouchStart={handleDragStart}
-        onTouchMove={handleDragMove}
-        onTouchEnd={handleDragEnd}
+        className="overflow-hidden relative flex animate-slide-both space-x-6 px-6"
+        onPointerDown={handlePointerDown}
+        onPointerMove={handlePointerMove}
+        onPointerUp={handlePointerUp}
+        onPointerLeave={handlePointerUp} // Ensure drag stops when pointer leaves the container
+        onTouchStart={handlePointerDown} // For touch devices
+        onTouchMove={handlePointerMove}
+        onTouchEnd={handlePointerUp}
       >
         {Medicines.map((medicine, index) => (
           <div
             key={index}
             className="min-w-[250px] rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer"
-            onClick={() => handleSelectMedicine(medicine)}
+            onClick={() => handleSelectMedicine(medicine)} // Add click handler
           >
             <img
               src={medicine.image}
@@ -111,7 +80,7 @@ const Medicine = () => {
       </div>
 
       {/* Modal for Selected Medicine */}
-      {selectedMedicine && (
+      {Medicine && (
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center z-50">
           <div className="bg-white rounded-lg shadow-lg p-6 max-w-[400px] relative">
             <button
@@ -121,20 +90,18 @@ const Medicine = () => {
               ✖
             </button>
             <img
-              src={selectedMedicine.image}
-              alt={selectedMedicine.name}
+              src={Medicine.image}
+              alt={Medicine.name}
               className="w-full h-[200px] object-cover rounded-lg mb-4"
             />
             <h4 className="text-xl font-semibold text-gray-800">
-              {selectedMedicine.name}
+              {Medicine.name}
             </h4>
             <p className="text-sm text-gray-600">
-              <span className="font-bold">Description:</span>{" "}
-              {selectedMedicine.details}
+              <span className="font-bold">Description:</span> {Medicine.details}
             </p>
             <p className="text-sm text-gray-600">
-              <span className="font-bold">Contact:</span>{" "}
-              {selectedMedicine.contact}
+              <span className="font-bold">Contact:</span> {Medicine.contact}
             </p>
           </div>
         </div>
