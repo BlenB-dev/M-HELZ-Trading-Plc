@@ -10,20 +10,20 @@ const Business = () => {
       title: "Importing high-quality products",
       description:
         "We import high-quality products from reputable manufacturers around the world.",
-      img: "/sample03.mp4", // Replace with the actual video path
+      img: "/image1.jpg", // Replace with the actual image path
     },
     {
       id: 2,
       title: "Well-staffed professionals",
       description:
         "Well-staffed with professional pharmacists and bio-medical engineers.",
-      video: "/sample02.mp4", // Replace with another video path
+      img: "/image2.jpg", // Replace with another image path
     },
     {
       id: 3,
       title: "We provide training sessions",
       description: "Comprehensive training sessions for effective product use.",
-      video: "/sample01.mp4", // Replace with another video path
+      img: "/image3.jpg", // Replace with another image path
     },
   ];
 
@@ -47,7 +47,7 @@ const Business = () => {
               key={feature.id}
               className={`cursor-pointer p-4 bg-gray-800 rounded-lg shadow-md transform hover:scale-105 transition duration-300 ${
                 selectedFeature === feature.id
-                  ? "ring-2 ring-purple-500 text-white"
+                  ? "ring-2 ring-purple-500  text-white"
                   : ""
               }`}
               onClick={() => setSelectedFeature(feature.id)}
@@ -56,7 +56,7 @@ const Business = () => {
                 {feature.id}. {feature.title}
               </h3>
               {selectedFeature === feature.id && (
-                <p className="text-sm sm:text-base mt-2">
+                <p className="text-sm  sm:text-base mt-2">
                   {feature.description}
                 </p>
               )}
@@ -64,13 +64,17 @@ const Business = () => {
           ))}
         </div>
 
-        {/* Right Section: Video and Description */}
-        <div className="flex flex-col items-center space-y-4">
+        {/* Right Section: Image and Description */}
+        <div className="flex flex-col animate-slide items-center space-y-4">
           {selectedFeature ? (
             <div>
               <img
                 src={
                   features.find((feature) => feature.id === selectedFeature).img
+                }
+                alt={
+                  features.find((feature) => feature.id === selectedFeature)
+                    .title
                 }
                 className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] rounded-lg shadow-lg"
               />
@@ -84,9 +88,10 @@ const Business = () => {
           ) : (
             <div>
               <img
-                src="/image1.mp4"
-                className="w-full max-w-md rounded-lg shadow-lg"
-              ></img>
+                src="/image7.jpg" // Default image when no feature is selected
+                alt="Default"
+                className="w-full animate-slide max-w-md rounded-lg shadow-lg"
+              />
             </div>
           )}
         </div>

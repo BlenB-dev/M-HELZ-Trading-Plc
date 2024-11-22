@@ -67,17 +67,13 @@ const Mission = () => (
         </div>
 
         {/* Right Section: Moving Video */}
-        <div className="relative overflow-hidden  rounded-lg shadow-lg ml-10">
+        <div className="relative overflow-hidden mt-[-150px]  rounded-lg shadow-lg ">
           {/* Video Element */}
-          <video
-            className="w-full -ml-10  h-full object-cover rounded-lg"
-            autoPlay
-            muted
-            loop
-          >
-            <source src="/sample01.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <img
+            src="/image5.jpg" // Default image when no feature is selected
+            alt="Default"
+            className="w-full animate-slide max-w-md rounded-lg shadow-lg"
+          />
 
           {/* Overlay Animation */}
         </div>

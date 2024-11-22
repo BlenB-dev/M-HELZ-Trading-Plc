@@ -21,7 +21,9 @@ const Footer = () => {
               alt=""
               className="h-10"
             />
-            <h1 className="text-xl font-bold text-orange-500">M HELZ</h1>
+            <h1 className="text-xl font-bold animate-pop text-orange-500">
+              M HELZ
+            </h1>
           </div>
 
           {/* Contact Section */}

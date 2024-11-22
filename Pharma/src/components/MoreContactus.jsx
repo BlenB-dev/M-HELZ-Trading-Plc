@@ -97,15 +97,11 @@ const MoreContactus = () => {
 
           {/* Right Section: Video */}
           <div className="flex items-center justify-center">
-            <video
-              className="rounded-lg shadow-lg w-full max-w-md lg:max-w-full"
-              autoPlay
-              muted
-              loop
-            >
-              <source src="/sample04.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <img
+              src="/image6.jpg" // Default image when no feature is selected
+              alt="Default"
+              className="w-full animate-slide max-w-md rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </div>
