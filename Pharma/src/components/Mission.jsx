@@ -23,17 +23,17 @@ const FeatureCard = ({ icon, title, content }) => (
 const Mission = () => (
   <>
     <section
-      className={`${layout.section} relative overflow-hidden text-white py-20`}
+      className={`${layout.section} relative overflow-hidden text-white py-20 px-4 sm:px-8 lg:px-16`}
     >
       <div className="absolute inset-0 opacity-20 bg-cover"></div>
 
       {/* Header Section */}
-      <div className="flex items-center mb-12 ml-10 animate-fade-in">
+      <div className="flex items-center mb-12 animate-fade-in">
         <FaHeartbeat className="text-5xl text-red-500 mr-4 animate-pulse" />
         <h2 className={`${styles.heading2} ml-2`}>Our Mission</h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
         {/* Left Section: Features */}
         <div>
           <p className={`${styles.paragraph} max-w-[600px] mb-10`}>
@@ -42,15 +42,15 @@ const Mission = () => (
             partnerships with global manufacturers.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 mb-12">
+          <div className="grid grid-cols-1 gap-8 mb-12">
             <FeatureCard
               icon={<FaCheckCircle />}
-              title=" Importation of Pharmaceuticals"
+              title="Importation of Pharmaceuticals"
               content="We ensure high-quality pharmaceuticals are imported for better healthcare."
             />
             <FeatureCard
               icon={<FaGlobe />}
-              title=" Regulatory Compliance"
+              title="Regulatory Compliance"
               content="Adhering to global standards and regulatory requirements."
             />
             <FeatureCard
@@ -66,16 +66,13 @@ const Mission = () => (
           </div>
         </div>
 
-        {/* Right Section: Moving Video */}
-        <div className="relative overflow-hidden mt-[-150px]  rounded-lg shadow-lg ">
-          {/* Video Element */}
+        {/* Right Section: Responsive Image/Video */}
+        <div className="relative overflow-hidden rounded-lg shadow-lg max-w-full">
           <img
-            src="/image5.jpg" // Default image when no feature is selected
-            alt="Default"
-            className="w-full animate-slide max-w-md rounded-lg shadow-lg"
+            src="/image5.jpg" // Replace with actual image path
+            alt="Mission"
+            className="w-full h-auto max-w-md sm:max-w-lg lg:max-w-full rounded-lg shadow-lg"
           />
-
-          {/* Overlay Animation */}
         </div>
       </div>
 

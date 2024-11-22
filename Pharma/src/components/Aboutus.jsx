@@ -10,7 +10,7 @@ import { layout } from "../style";
 import Footer from "./Footer"; // Import Footer component
 
 const Aboutus = () => (
-  <div className=" text-white">
+  <div className="text-white">
     {/* About Us Header with Icon */}
     <div className="flex flex-col items-center text-center mb-12 px-4">
       <div className="flex items-center space-x-4 sm:space-x-6 lg:space-x-8">
@@ -21,25 +21,25 @@ const Aboutus = () => (
       </div>
     </div>
 
-    {/* Video Section */}
-    <div className="relative  py-10 px-4 sm:px-8  lg:px-16">
+    {/* Image Section */}
+    <div className="relative py-10 px-4 sm:px-8 lg:px-16">
       <div className="flex justify-center">
         <img
-          src="/image4.jpg" // Default image when no feature is selected
-          alt="Default"
-          className="w-full animate-slide max-w-md rounded-lg shadow-lg"
+          src="/image4.jpg"
+          alt="About Us"
+          className="w-full max-w-sm sm:max-w-md lg:max-w-lg rounded-lg shadow-lg"
         />
       </div>
     </div>
 
     {/* About Us Section */}
     <section
-      className={`${layout.section} relative  text-white py-10 mt-[-95px] px-4 sm:px-8 lg:px-16`}
+      className={`${layout.section} text-white py-10 px-4 sm:px-8 lg:px-16`}
     >
-      <div className="relative z-10 max-w-7xl ">
+      <div className="relative z-10 max-w-7xl mx-auto">
         {/* About Us Content */}
-        <div className="text-center md:text-left">
-          <p className="  mx-auto max-w-2xl text-base sm:text-lg lg:text-xl">
+        <div className="text-center md:text-left mb-12">
+          <p className="mx-auto max-w-2xl text-base sm:text-lg lg:text-xl">
             Established in 2024, <strong>M HELZ Trading Plc</strong> is a
             leading pharmaceutical importing company based in Ethiopia. We
             specialize in sourcing high-quality pharmaceutical products to meet
@@ -49,8 +49,8 @@ const Aboutus = () => (
           </p>
         </div>
 
-        {/* Animated Values List */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        {/* Values Section */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="flex items-start gap-4 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
             <FaGlobeAfrica className="text-4xl text-blue-500" />
             <div>
