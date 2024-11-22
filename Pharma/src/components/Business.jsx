@@ -90,7 +90,7 @@ const Business = () => {
           ) : (
             <div>
               <video
-                src="/sample05.mp4"
+                src="/sample001.mp4"
                 preload="auto"
                 autoPlay
                 loop
