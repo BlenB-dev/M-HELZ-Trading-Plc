@@ -65,7 +65,7 @@ const Business = () => {
         </div>
 
         {/* Right Section: Image and Description */}
-        <div className="flex flex-col items-center space-y-4">
+        <div className="flex flex-col animate-slide items-center space-y-4">
           {selectedFeature ? (
             <div>
               <img
@@ -90,7 +90,7 @@ const Business = () => {
               <img
                 src="/image7.jpg" // Default image when no feature is selected
                 alt="Default"
-                className="w-full max-w-md rounded-lg shadow-lg"
+                className="w-full animate-slide max-w-md rounded-lg shadow-lg"
               />
             </div>
           )}
