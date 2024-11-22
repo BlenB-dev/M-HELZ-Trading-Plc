@@ -67,7 +67,7 @@ const Mission = () => (
         </div>
 
         {/* Right Section: Responsive Image/Video */}
-        <div className="relative overflow-hidden rounded-lg shadow-lg max-w-full">
+        <div className="relative animate-slide overflow-hidden rounded-lg shadow-lg max-w-full">
           <img
             src="/image5.jpg" // Replace with actual image path
             alt="Mission"

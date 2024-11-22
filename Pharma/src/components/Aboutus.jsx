@@ -23,7 +23,7 @@ const Aboutus = () => (
 
     {/* Image Section */}
     <div className="relative py-10 px-4 sm:px-8 lg:px-16">
-      <div className="flex justify-center">
+      <div className="flex animate-slide justify-center">
         <img
           src="/image4.jpg"
           alt="About Us"
