@@ -77,9 +77,9 @@ const Business = () => {
                 loop
                 preload="auto"
                 muted
+                playsInline
                 className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] rounded-lg shadow-lg"
               />
-
               <p className="text-sm sm:text-base text-white text-center mt-4">
                 {
                   features.find((feature) => feature.id === selectedFeature)
@@ -95,7 +95,7 @@ const Business = () => {
                 autoPlay
                 loop
                 muted
-                playsinline
+                playsInline
                 className="w-full max-w-md rounded-lg shadow-lg"
               ></video>
             </div>
