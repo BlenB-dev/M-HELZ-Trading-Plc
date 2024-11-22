@@ -10,7 +10,7 @@ const Business = () => {
       title: "Importing high-quality products",
       description:
         "We import high-quality products from reputable manufacturers around the world.",
-      video: "/sample03.mp4", // Replace with the actual video path
+      img: "/sample03.mp4", // Replace with the actual video path
     },
     {
       id: 2,
@@ -68,16 +68,10 @@ const Business = () => {
         <div className="flex flex-col items-center space-y-4">
           {selectedFeature ? (
             <div>
-              <video
+              <img
                 src={
-                  features.find((feature) => feature.id === selectedFeature)
-                    .video
+                  features.find((feature) => feature.id === selectedFeature).img
                 }
-                autoPlay
-                loop
-                preload="auto"
-                muted
-                playsInline
                 className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] rounded-lg shadow-lg"
               />
               <p className="text-sm sm:text-base text-white text-center mt-4">
@@ -89,15 +83,10 @@ const Business = () => {
             </div>
           ) : (
             <div>
-              <video
-                src="/sample1.mp4"
-                preload="auto"
-                autoPlay
-                loop
-                muted
-                playsInline
+              <img
+                src="/image1.mp4"
                 className="w-full max-w-md rounded-lg shadow-lg"
-              ></video>
+              ></img>
             </div>
           )}
         </div>
