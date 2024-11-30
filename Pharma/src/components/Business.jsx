@@ -9,29 +9,44 @@ const Business = () => {
       id: 1,
       title: "Importing high-quality products",
       description:
-        "We import high-quality products from reputable manufacturers around the world.",
+        "To revolutionize healthcare by providing quality medical imports, establishing accessible pharmacies, and expanding into manufacturing and diagnostics to empower communities",
       img: "/image1.jpg", // Replace with the actual image path
     },
     {
       id: 2,
-      title: "Well-staffed professionals",
+      title: "Healthcare delivery ",
       description:
-        "Well-staffed with professional pharmacists and bio-medical engineers.",
+        "To lead in healthcare delivery through trusted imports, pharmacy chains, and innovative ventures in manufacturing and diagnostics.",
       img: "/image2.jpg", // Replace with another image path
     },
     {
       id: 3,
-      title: "We provide training sessions",
-      description: "Comprehensive training sessions for effective product use.",
+      title: "future accessible care",
+      description:
+        "A future where accessible care, local manufacturing, and advanced diagnostics transform global health standards.",
+      img: "/image3.jpg", // Replace with another image path
+    },
+    {
+      id: 4,
+      title: "A comprehensive healthcare leader",
+      description:
+        "To be a comprehensive healthcare leader with quality imports, community pharmacies, manufacturing, and diagnostic excellence.",
+      img: "/image3.jpg", // Replace with another image path
+    },
+    {
+      id: 5,
+      title: "Building a healthier tomorrow",
+      description:
+        "Building a healthier tomorrow with trusted supplies, accessible care, and self-reliant healthcare solutions.",
       img: "/image3.jpg", // Replace with another image path
     },
   ];
 
   return (
-    <div className="max-w-5xl mx-auto p-6">
+    <div className="max-w-5xl mx-auto p-6 ">
       {/* Header */}
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-6 text-white">
-        <span className="animate-pop text-gradient"> Why Choose Us</span>
+        <span className="animate-pop text-gradient"> Our Vision</span>
       </h2>
       <p className="text-center mb-8 text-white">
         At HELZ, we understand that choosing the right product is a crucial

@@ -1,13 +1,7 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import {
-  Navbar,
   Business,
   Hero,
   Footer,
@@ -19,25 +13,23 @@ import Mission from "./components/Mission";
 import Contactus from "./components/Contactus";
 import MoreContactus from "./components/MoreContactus";
 import { Service } from "./components";
+import ImportProducts from "./components/ImportProducts";
+import ExportProducts from "./components/ExportProducts";
 
 const Maincontent = () => {
-  const location = useLocation();
   return (
-    <div className="bg-primary w-full min-h-screen overflow-hidden ">
-      {location.pathname === "/Aboutus" && <Navbar />}
-      {location.pathname === "/" && <Navbar />}
-      {location.pathname === "/Mission" && <Navbar />}
-      {location.pathname === "/MoreContactus" && <Navbar />}
-      {location.pathname === "/Service" && <Navbar />}
-
+    <div className=" w-full min-h-screen overflow-hidden ">
       <Routes>
         <Route
           path="/"
           element={
             <>
               <Hero />
+              <div className="bg-secondary">
+                <Business />
+              </div>
+
               <Medicine />
-              <Business />
               <Testimonials />
               <Contactus />
               <Footer />
@@ -48,6 +40,8 @@ const Maincontent = () => {
         <Route path="/Mission" element={<Mission />} />
         <Route path="/MoreContactus" element={<MoreContactus />} />
         <Route path="/Service" element={<Service />} />
+        <Route path="/ImportProducts" element={<ImportProducts />} />
+        <Route path="/ExportProducts" element={<ExportProducts />} />
       </Routes>
     </div>
   );

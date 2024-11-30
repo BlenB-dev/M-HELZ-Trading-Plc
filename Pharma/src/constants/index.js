@@ -1,7 +1,7 @@
 import {
-  people01,
-  people02,
-  people03,
+  // people01,
+  // people02,
+  // people03,
   facebook,
   instagram,
   linkedin,
@@ -13,7 +13,7 @@ import {
   send,
   shield,
   star,
-  logo1,
+  // logo1,
   med1,
   med2,
   med3,
@@ -73,9 +73,9 @@ export const feedback = [
     id: "feedback-1",
     content:
       "Access to quality pharmaceuticals has transformed healthcare for our community, ensuring better health outcomes and a brighter future.",
-    name: "Dr. Helen Tesfaye",
+    name: "Helen Tesfaye",
     title: "Healthcare Advocate",
-    img: people01,
+    // img: people01,
   },
   {
     id: "feedback-2",
@@ -83,66 +83,129 @@ export const feedback = [
       "Partnering with M HELZ Trading has elevated our pharmaceutical standards and strengthened global collaborations in healthcare.",
     name: "Blen Alemu",
     title: "Pharmacy Manager",
-    img: people03,
+    // img: people03,
   },
   {
     id: "feedback-3",
     content:
       "M HELZ Trading's commitment to delivering safe and effective medications has revolutionized the pharmaceutical landscape in Ethiopia.",
-    name: "Dr. Edil Worku",
+    name: " Edil",
     title: "Medical Specialist",
-    img: people02,
+    // img: people02,
   },
 ];
-
+export const ImportPro = [
+  {
+    id: 1,
+    name: "Medicines",
+    img: "./src/assets/Import/med1.jpg",
+    description: "Lorem Ipsum",
+  },
+  {
+    id: 2,
+    name: " Medical equipments and devices",
+    img: "./src/assets/Import/MedicalEquiment.jpg",
+    description: "Sed Curus",
+  },
+  {
+    id: 3,
+    name: "Medical supplies",
+    img: "./src/assets/Import/Medical supplies.jpg",
+    description: "Nulla Quis",
+  },
+  {
+    id: 4,
+    name: " Medical furniture",
+    img: "./src/assets/Import/Medical furniture.jpg",
+    description: "Lorem Ipsum",
+  },
+  {
+    id: 5,
+    name: "Vaccines",
+    img: "./src/assets/Import/Vaccines.jpg",
+    description: "Sed Curus",
+  },
+  {
+    id: 6,
+    name: " Cosmetic products",
+    img: "./src/assets/Import/Cosmetic products.jpg",
+    description: "Nulla Quis",
+  },
+  {
+    id: 7,
+    name: "  Formula milk",
+    img: "./src/assets/Import/Cosmetic products.jpg",
+    description: "Nulla Quis",
+  },
+];
+export const ExportPro = [
+  {
+    id: 1,
+    name: "Coffe",
+    img: "./src/assets/Import/med1.jpg",
+    description: "Lorem Ipsum",
+  },
+  {
+    id: 1,
+    name: "spices",
+    img: "./src/assets/Import/med1.jpg",
+    description: "Lorem Ipsum",
+  },
+  {
+    id: 1,
+    name: "cereals",
+    img: "./src/assets/Import/med1.jpg",
+    description: "Lorem Ipsum",
+  },
+];
 export const Medicines = [
   {
     id: "med-1",
     name: "Paracetamol (Tylenol)",
     details: "sdlkjflksdjf",
     contact: "0911615712",
-    image: med1,
+    img: med1,
   },
   {
     id: "med-2",
     contact: "0987656789",
     details: "sdlkjflksdjf",
     name: "TYLENOL ",
-    image: med2,
+    img: med2,
   },
   {
     id: "med-3",
     contact: "0987654345",
     details: "sdlkjflksdjf",
     name: "Amoxicillin ",
-    image: med3,
+    img: med3,
   },
   {
     id: "med-4",
     contact: "0987654345",
     details: "sdlkjflksdjf",
     name: "Amoxicillin",
-    image: med4,
+    img: med4,
   },
 ];
 export const MoreInfoMedicines = [
   {
     id: "med-1",
     name: "Paracetamol (Tylenol)",
-    image: logo1,
+    // img: logo1,
     contact: "0987654356",
   },
   {
     id: "med-2",
     name: "Ibuprofen (Advil, Motrin) ",
     details: "kdfsjflksj",
-    image: logo1,
+    // img: logo1,
     contact: "0987654356",
   },
   {
     id: "med-3",
     name: "Aspirin ",
-    image: logo1,
+    // img: logo1,
     details: "kdlsjflksdj",
     contact: "0987654356",
   },

@@ -1,6 +1,6 @@
 import { quotes } from "../assets";
 
-const FeedbackCard = ({ content, name, title, img }) => (
+const FeedbackCard = ({ content, name, title }) => (
   <div className="flex flex-col justify-between p-6 sm:p-8 rounded-[20px] bg-gray-800 shadow-lg max-w-[90%] sm:max-w-[370px] mx-auto sm:mx-0 my-4">
     <img
       src={quotes}
@@ -12,11 +12,6 @@ const FeedbackCard = ({ content, name, title, img }) => (
     </p>
 
     <div className="flex flex-row items-center mt-auto">
-      <img
-        src={img}
-        alt={name}
-        className="w-[48px] h-[48px] sm:w-[56px] sm:h-[56px] rounded-full"
-      />
       <div className="flex flex-col ml-4">
         <h4 className="font-poppins font-semibold text-[18px] sm:text-[20px] leading-[28px] sm:leading-[32px] text-white">
           {name}

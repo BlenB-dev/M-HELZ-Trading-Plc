@@ -1,17 +1,14 @@
 import React, { useState } from "react";
-import styles from "../style";
-import { discount } from "../assets";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
+import { ImportPro } from "../constants";
 
-const Hero = () => {
+const ImportProducts = () => {
   const [menuOpen, setMenuOpen] = useState(false); // State to control menu visibility
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <section
-      id="home"
-      className={`relative flex md:flex-row flex-col bg-primary ${styles.paddingY}`}
-    >
+    <div className="bg-secondary min-h-screen text-white">
       {/* Header/Navbar */}
       <header className="fixed top-0 left-0 w-full bg-primary z-50 shadow-md">
         <nav className="max-w-7xl mx-auto flex justify-between items-center p-4">
@@ -119,58 +116,41 @@ const Hero = () => {
         )}
       </header>
 
-      {/* Left Section */}
-      <div
-        className={`flex-2 ${styles.flexStart} flex-col xl:px-0 sm:px-16 mt-10 px-6`}
-      >
-        <div className="flex flex-row items-center py-[5px] mt-10 px-4 bg-discount-gradient rounded-[10px] mb-2 animate-fade-in">
-          <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
-          <p className={`${styles.paragraph} text-white ml-3`}>
-            Your partner in health solutions
+      {/* Content Section */}
+      <section className="py-12 mt-10 px-6 max-w-7xl mx-auto">
+        {/* Introduction */}
+        <div className="text-center mb-12">
+          <h2 className="text-5xl font-bold text-gradient mb-4">
+            What We Import
+          </h2>
+          <p className="text-gray-300 max-w-3xl mx-auto text-lg">
+            M HELZ PLC specializes in importing a wide range of pharmaceuticals,
+            medical equipment, and supplies, ensuring quality and reliability
+            for our clients.
           </p>
         </div>
-        <h1 className="flex-1 font-poppins font-bold ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px] mb-1 animate-slide-up">
-          M HELZ Trading Plc
-          <br />
-        </h1>
-        <p
-          className={`${styles.paragraph} max-w-[470px] text-white text-opacity-90 mb-8 animate-fade-in`}
-        >
-          To enhance the health and well-being of the Ethiopian population by
-          providing access to quality pharmaceuticals while fostering strong
-          partnerships with global manufacturers.
-        </p>
-        <button className="bg-green-500 text-white px-6 py-2 rounded-lg shadow-lg hover:bg-green-600 transition">
-          Learn More
-        </button>
-      </div>
 
-      {/* Video Section */}
-      <div
-        className={`flex-1 flex ${styles.flexCenter} md:my-0 my-11 relative animate-slide-in`}
-      >
-        <video
-          src="/Intro.mp4"
-          className="w-[80%] h-auto  relative z-[5] rounded-lg "
-          autoPlay
-          loop
-          muted
-          poster="/placeholder-image.jpg"
-        />
-      </div>
-
-      {/* SVG Divider */}
-      <div className="absolute w-full bottom-0">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#000000"
-            fillOpacity="1"
-            d="M0,160L48,176C96,192,192,224,288,218.7C384,213,480,171,576,149.3C672,128,768,128,864,154.7C960,181,1056,235,1152,240C1248,245,1344,203,1392,181.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          ></path>
-        </svg>
-      </div>
-    </section>
+        {/* ImportProducts Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {ImportPro.map((Import) => (
+            <div
+              key={Import.id}
+              className="flex flex-col items-center bg-secondary rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-t-4 border-green-500"
+            >
+              <img
+                src={Import.img}
+                className="w-full h-[200px] object-contain mb-4 rounded-md"
+              />
+              <h3 className="text-xl font-bold mt-4 text-white">
+                {Import.name}
+              </h3>
+            </div>
+          ))}
+        </div>
+      </section>
+      <Footer />
+    </div>
   );
 };
 
-export default Hero;
+export default ImportProducts;

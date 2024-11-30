@@ -20,10 +20,10 @@ import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
-import people01 from "./people01.png";
-import people02 from "./people02.png";
-import people03 from "./people03.jpg";
-import logo1 from "./logo1.png";
+// import people01 from "./people01.png";
+// import people02 from "./people02.png";
+// import people03 from "./people03.jpg";
+// import logo1 from "./logo1.png";
 import sideimage from "./sideimage.png";
 import hands from "./hands.png";
 import med1 from "./med1.jpg";
@@ -59,8 +59,8 @@ export {
   instagram,
   linkedin,
   twitter,
-  people01,
-  people02,
-  people03,
-  logo1,
+  // people01,
+  // people02,
+  // people03,
+  // logo1,
 };

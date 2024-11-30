@@ -4,15 +4,34 @@ import Footer from "./Footer";
 
 const MoreContactus = () => {
   return (
-    <div
-      className="min-h-screen flex flex-col justify-between px-5 "
-      style={{
-        backgroundColor: "rgba(0, 0, 0, 0.6)", // Adds a transparent overlay
-        backgroundBlendMode: "overlay",
-      }}
-    >
+    <div className="min-h-screen  bg-secondary flex flex-col justify-between px-5 ">
       {/* Content Section */}
-      <div className="flex-grow flex items-center justify-center">
+      <header className="fixed top-0 left-0 w-full bg-primary z-50 ">
+        <nav className="max-w-7xl mx-auto flex justify-between items-center p-4">
+          <div className="text-2xl font-bold text-gradient">M HELZ</div>
+          <ul className="flex space-x-6 text-lg text-white">
+            <a href="/">
+              <li className="hover:underline cursor-pointer">Home</li>
+            </a>
+            <a href="/Aboutus">
+              {" "}
+              <li className="hover:underline cursor-pointer">About Us</li>{" "}
+            </a>
+            <a href="/Mission">
+              <li className="hover:underline cursor-pointer">Our Mission</li>
+            </a>
+            <a href="/Service">
+              {" "}
+              <li className="hover:underline cursor-pointer">Our Services</li>
+            </a>
+            <a href="/MoreContactus">
+              {" "}
+              <li className="hover:underline cursor-pointer">Contact Us</li>
+            </a>
+          </ul>
+        </nav>
+      </header>
+      <div className="flex-grow flex items-center mt-10 justify-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 rounded-xl shadow-lg p-6 sm:p-8 lg:p-12 max-w-6xl w-full ">
           {/* Left Section: Form */}
           <div>

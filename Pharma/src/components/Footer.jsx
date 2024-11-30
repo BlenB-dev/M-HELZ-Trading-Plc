@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className=" text-white py-10">
+    <footer className=" text-white py-10 bg-secondary">
       <div className="container mx-auto px-6">
         {/* Responsive Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -21,7 +21,7 @@ const Footer = () => {
               alt=""
               className="h-10"
             />
-            <h1 className="text-xl font-bold animate-pop text-orange-500">
+            <h1 className="text-xl font-bold animate-pop text-gradient">
               M HELZ
             </h1>
           </div>
@@ -35,8 +35,8 @@ const Footer = () => {
                 Road
               </li>
               <li>📧 mhelztrading@gmail.com</li>
-              <li>📞 +251 96 821 4723 - Dr. Helen</li>
-              <li>📞 +251 946 724 253 - Dr. Edil</li>
+              <li>📞 +251 96 821 4723 </li>
+              <li>📞 +251 946 724 253 </li>
             </ul>
           </div>
 
@@ -82,12 +82,6 @@ const Footer = () => {
               </a>
             </div>
           </div>
-        </div>
-
-        {/* Footer Bottom Text */}
-        <div className="mt-10 -ml-[150px] text-center text-sm">
-          <p>© 2024 M HELZ Pharma.</p>
-          <p>Designed by Blue B.</p>
         </div>
       </div>
 

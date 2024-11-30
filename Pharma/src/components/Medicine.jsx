@@ -67,10 +67,10 @@ const Medicine = () => {
   };
 
   return (
-    <section className="py-10">
-      {/* Header Section */}
+    <div className="py-10 bg-secondary  ">
+      {/* Header div */}
       <div className="text-center mb-8">
-        <h2 className="text-3xl animate-slide font-bold text-gradient">
+        <h2 className="text-3xl animate-slide  font-bold text-gradient">
           Some Of Our Latest Products
         </h2>
         <p className="text-sm animate-slide text-gradient">
@@ -78,7 +78,7 @@ const Medicine = () => {
         </p>
       </div>
 
-      {/* Carousel Section */}
+      {/* Carousel div */}
       <div className="max-w-6xl mx-auto px-4 relative">
         <Slider {...settings}>
           {Medicines.map((medicine, index) => (
@@ -89,7 +89,7 @@ const Medicine = () => {
             >
               <div className="rounded-lg shadow-lg hover:shadow-xl transition duration-300">
                 <img
-                  src={medicine.image}
+                  src={medicine.img}
                   alt={medicine.name}
                   className="w-full h-[200px] object-contain rounded-t-lg"
                 />
@@ -106,7 +106,7 @@ const Medicine = () => {
 
       {/* Modal for Selected Medicine */}
       {selectedMedicine && (
-        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center z-50">
+        <div className="fixed top-0 left-0 w-full h-full  flex justify-center items-center z-50">
           <div className="bg-white rounded-lg shadow-lg p-6 max-w-[400px] relative">
             <button
               className="absolute top-4 right-4 text-black text-xl font-bold"
@@ -115,7 +115,7 @@ const Medicine = () => {
               ✖
             </button>
             <img
-              src={selectedMedicine.image}
+              src={selectedMedicine.img}
               alt={selectedMedicine.name}
               className="w-full h-[200px] object-cover rounded-lg mb-4"
             />
@@ -133,7 +133,7 @@ const Medicine = () => {
           </div>
         </div>
       )}
-    </section>
+    </div>
   );
 };
 

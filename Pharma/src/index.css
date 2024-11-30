@@ -17,6 +17,12 @@
 * {
   scroll-behavior: smooth;
 }
+.bg-primary {
+  background-color: #578634;
+}
+.bg-secondary {
+  background-color: #0a0a08;
+}
 
 .text-gradient {
   background: radial-gradient(

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaPills, FaRegBuilding, FaChartLine } from "react-icons/fa";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 const Service = () => {
+  const [menuOpen, setMenuOpen] = useState(false); // State to control menu visibility
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   return (
     <div
       className="min-h-screen flex flex-col justify-between text-white bg-cover bg-center"
@@ -13,10 +17,115 @@ const Service = () => {
         backgroundBlendMode: "overlay",
       }}
     >
+      <header className="fixed top-0 left-0 w-full bg-primary z-50 shadow-md">
+        <nav className="max-w-7xl mx-auto flex justify-between items-center p-4">
+          {/* Logo */}
+          <div className="text-2xl font-bold text-gradient">M HELZ</div>
+
+          {/* Desktop Navigation Links */}
+          <ul className="hidden sm:flex space-x-6 text-lg text-white">
+            <li className="hover:underline cursor-pointer">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="hover:underline cursor-pointer">
+              <Link to="/Aboutus">About Us</Link>
+            </li>
+            <li className="hover:underline cursor-pointer">
+              <Link to="/Mission">Our Mission</Link>
+            </li>
+
+            {/* Dropdown */}
+            <div className="relative">
+              <li
+                className="hover:underline cursor-pointer flex items-center"
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)} // Toggle dropdown on click
+              >
+                Our Services
+                <svg
+                  className="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </li>
+
+              {isDropdownOpen && (
+                <ul
+                  className="absolute left-0 mt-2 w-40 bg-white text-black shadow-lg rounded-lg"
+                  onMouseLeave={() => setIsDropdownOpen(false)} // Close on mouse leave
+                >
+                  <li className="hover:bg-gray-200 px-4 py-2 cursor-pointer">
+                    <a href="/ImportProducts">Import</a>
+                  </li>
+                  <li className="hover:bg-gray-200 px-4 py-2 cursor-pointer">
+                    <a href="/ExportProducts">Export</a>
+                  </li>
+                </ul>
+              )}
+            </div>
+
+            <li className="hover:underline cursor-pointer">
+              <Link to="/MoreContactus">Contact Us</Link>
+            </li>
+          </ul>
+
+          {/* Mobile Menu Icon */}
+          <div
+            className="sm:hidden flex items-center cursor-pointer text-white text-2xl"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? "✖" : "☰"}
+          </div>
+        </nav>
+
+        {/* Mobile Menu */}
+        {menuOpen && (
+          <ul className="sm:hidden bg-primary text-white text-lg space-y-4 py-4 px-6">
+            <li
+              className="hover:underline cursor-pointer"
+              onClick={() => setMenuOpen(false)}
+            >
+              <Link to="/">Home</Link>
+            </li>
+            <li
+              className="hover:underline cursor-pointer"
+              onClick={() => setMenuOpen(false)}
+            >
+              <Link to="/Aboutus">About Us</Link>
+            </li>
+            <li
+              className="hover:underline cursor-pointer"
+              onClick={() => setMenuOpen(false)}
+            >
+              <Link to="/Mission">Our Mission</Link>
+            </li>
+            <li
+              className="hover:underline cursor-pointer"
+              onClick={() => setMenuOpen(false)}
+            >
+              <Link to="/Service">Our Services</Link>
+            </li>
+            <li
+              className="hover:underline cursor-pointer"
+              onClick={() => setMenuOpen(false)}
+            >
+              <Link to="/MoreContactus">Contact Us</Link>
+            </li>
+          </ul>
+        )}
+      </header>
       {/* Content Section */}
       <div>
         {/* Header Section */}
-        <div className="text-center mb-12 py-12">
+        <div className="text-center mt-20 py-12">
           <h1 className="text-3xl sm:text-4xl font-bold text-gradient mb-4">
             Our Services
           </h1>
